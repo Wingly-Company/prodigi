@@ -18,7 +18,7 @@ class Order extends DataTransferObject
 
     public ?string $idempotencyKey;
 
-    public ?Status $status;
+    public Status $status;
 
     /** @var \Wingly\Prodigi\Charge[] */
     public $charges;
