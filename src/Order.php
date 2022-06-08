@@ -33,7 +33,7 @@ class Order extends DataTransferObject
 
     public ?PackingSlip $packingSlip;
 
-    public array $metadata = [];
+    public ?array $metadata;
 
     public static function create(array $data)
     {
