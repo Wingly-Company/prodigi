@@ -12,7 +12,7 @@ class Shipment extends DataTransferObject
 
     public string $dispatchDate;
 
-    /** @var \Wingly\Prodigi\ShipmentItem[] */
+    /** @var ShipmentItem[] */
     public $items;
 
     public FulfillmentLocation $fulfillmentLocation;
