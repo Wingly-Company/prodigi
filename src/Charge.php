@@ -12,6 +12,6 @@ class Charge extends DataTransferObject
 
     public Cost $totalCost;
 
-    /** @var \Wingly\Prodigi\ChargeItem[] */
+    /** @var ChargeItem[] */
     public $items;
 }

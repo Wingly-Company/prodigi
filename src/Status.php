@@ -8,9 +8,9 @@ class Status extends DataTransferObject
 {
     public string $stage;
 
-    /** @var \Wingly\Prodigi\Details[] */
+    /** @var Details[] */
     public $details;
 
-    /** @var \Wingly\Prodigi\Issues[] */
+    /** @var Issues[] */
     public $issues;
 }

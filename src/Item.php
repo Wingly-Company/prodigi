@@ -20,6 +20,6 @@ class Item extends DataTransferObject
 
     public array $attributes = [];
 
-    /** @var \Wingly\Prodigi\Asset[] */
+    /** @var Asset[] */
     public $assets;
 }

@@ -20,15 +20,15 @@ class Order extends DataTransferObject
 
     public Status $status;
 
-    /** @var \Wingly\Prodigi\Charge[] */
+    /** @var Charge[] */
     public $charges;
 
-    /** @var \Wingly\Prodigi\Shipment[] */
+    /** @var Shipment[] */
     public $shipments;
 
     public Recipient $recipient;
 
-    /** @var \Wingly\Prodigi\Item[] */
+    /** @var Item[] */
     public $items;
 
     public ?PackingSlip $packingSlip;
