@@ -2,9 +2,9 @@
 
 namespace Wingly\Prodigi;
 
-use Spatie\DataTransferObject\DataTransferObject;
+use Spatie\LaravelData\Data;
 
-class Details extends DataTransferObject
+class Details extends Data
 {
     public string $downloadAssets;
 

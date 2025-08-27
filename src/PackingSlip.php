@@ -2,9 +2,9 @@
 
 namespace Wingly\Prodigi;
 
-use Spatie\DataTransferObject\DataTransferObject;
+use Spatie\LaravelData\Data;
 
-class PackingSlip extends DataTransferObject
+class PackingSlip extends Data
 {
     public ?string $url;
 

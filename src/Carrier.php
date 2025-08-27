@@ -2,9 +2,9 @@
 
 namespace Wingly\Prodigi;
 
-use Spatie\DataTransferObject\DataTransferObject;
+use Spatie\LaravelData\Data;
 
-class Carrier extends DataTransferObject
+class Carrier extends Data
 {
     public string $name;
 
