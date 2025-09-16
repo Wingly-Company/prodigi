@@ -2,9 +2,9 @@
 
 namespace Wingly\Prodigi;
 
-use Spatie\DataTransferObject\DataTransferObject;
+use Spatie\LaravelData\Data;
 
-class Order extends DataTransferObject
+class Order extends Data
 {
     public string $id;
 
@@ -39,14 +39,14 @@ class Order extends DataTransferObject
     {
         $response = app(Prodigi::class)->createOrder($data);
 
-        return new self($response);
+        return self::from($response);
     }
 
     public static function find(string $id)
     {
         $response = app(Prodigi::class)->getOrder($id);
 
-        return new self($response);
+        return self::from($response);
     }
 
     public function canCancel(): bool
@@ -60,6 +60,6 @@ class Order extends DataTransferObject
     {
         $response = app(Prodigi::class)->cancelOrder($this->id);
 
-        return new self($response);
+        return self::from($response);
     }
 }

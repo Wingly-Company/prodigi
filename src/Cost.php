@@ -2,9 +2,9 @@
 
 namespace Wingly\Prodigi;
 
-use Spatie\DataTransferObject\DataTransferObject;
+use Spatie\LaravelData\Data;
 
-class Cost extends DataTransferObject
+class Cost extends Data
 {
     public string $amount;
 

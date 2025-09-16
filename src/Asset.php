@@ -2,9 +2,9 @@
 
 namespace Wingly\Prodigi;
 
-use Spatie\DataTransferObject\DataTransferObject;
+use Spatie\LaravelData\Data;
 
-class Asset extends DataTransferObject
+class Asset extends Data
 {
     public string $printArea = 'default';
 

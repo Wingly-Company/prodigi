@@ -3,6 +3,7 @@
 namespace Wingly\Prodigi\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
+use Spatie\LaravelData\LaravelDataServiceProvider;
 use Wingly\Prodigi\ProdigiServiceProvider;
 
 abstract class TestCase extends Orchestra
@@ -14,7 +15,10 @@ abstract class TestCase extends Orchestra
 
     protected function getPackageProviders($app)
     {
-        return [ProdigiServiceProvider::class];
+        return [
+            LaravelDataServiceProvider::class,
+            ProdigiServiceProvider::class,
+        ];
     }
 
     protected function getEnvironmentSetUp($app)

@@ -2,9 +2,9 @@
 
 namespace Wingly\Prodigi;
 
-use Spatie\DataTransferObject\DataTransferObject;
+use Spatie\LaravelData\Data;
 
-class FulfillmentLocation extends DataTransferObject
+class FulfillmentLocation extends Data
 {
     public string $countryCode;
 

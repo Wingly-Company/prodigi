@@ -2,9 +2,9 @@
 
 namespace Wingly\Prodigi;
 
-use Spatie\DataTransferObject\DataTransferObject;
+use Spatie\LaravelData\Data;
 
-class AuthorisationDetails extends DataTransferObject
+class AuthorisationDetails extends Data
 {
     public string $authorisationUrl;
 
